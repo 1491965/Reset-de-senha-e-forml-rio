@@ -1,0 +1,113 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="./styles/styles.css" />
+    <title>Cadastro</title>
+</head>
+<body>
+    <section class="container-register">
+        <form class="form">
+            <h1 class="title">Faça seu cadastro</h1>
+            <div class="label-input-name">
+                <label class="label-name">Nome Completo</label>
+                <input  type="text" class="input-name" placeholder="Digite seu nome completo" id="name" required/>
+            </div>
+         <div class="date-country">
+             <div class="label-input-date">
+             <label for="date" class="label-date">Data de Nascimento</label>   
+             <input type="date" class="input-date" id="date" placeholder="ddmmaaaa">
+             </div>
+             <div class="country">
+<label for="pais" class="label-country">País*</label>
+
+<select class="select-country">
+  <option>select...</option>
+  <option value="Brasil">Brasil</option>
+  <option value="Argentina">Argentina</option>
+  <option value="Bolívia">Bolívia</option>
+  <option value="Paraguai">Paraguai</option>
+  <option value="Uruguai">Uruguai</option>
+  <option value="México">México</option>
+  <option value="Chile">Chile</option>
+</select>
+             </div>
+         </div>
+         <div class="wrapper-genre-radio">
+            <span class="genre">Gênero</span>                
+                              
+            <div class="genre-radio">
+               <div class="genre">
+                 <input type="radio" class="input-gender" name="radio" id="fem" />
+                 <label for="text" class="label-text">Feminino</label>
+               </div>
+               <div class="genre">
+                 <input type="radio" name="radio" id="mas" />
+                 <label for="text" class="label-text">Masculino</label>
+               </div>
+               <div class="genre">
+                 <input type="radio" name="radio" id="não declarar" />
+                 <label for="text" class="label-text">Não declarar</label>
+               </div>
+             </div>
+         </div>
+        </div> 
+        <div class="label-input-email">
+          <label for="text" class="label-email">E-mail</label>
+          <input
+            type="text"
+            class="input-email"
+            id="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+        <div class="label-input-password">
+            <label for="password" class="label-password">Senha</label>
+            <input
+              type="password"
+              class="input-password"
+              id="password"
+              placeholder="Digite seu e-mail"
+              required
+            />
+          </div>
+          <div class="label-input-password-confirm">
+            <label for="password" class="label-password-confirm"
+              >Confirme sua senha</label
+            >
+            <input
+              type="password"
+              class="input-password-confirm"
+              id="password-confirm"
+              placeholder="Confirme sua senha"
+              required
+            />
+          </div>
+        <div class="terms">
+            <input
+            type="checkbox"
+            class="terms-input-checkbox"
+            id="conditions-terms"
+            placeholder="checkbox"
+            required
+          />
+          <p class="p-conditions-terms">
+            Aceite os
+            <a href="#" class="accept-link">Termos e condições</a> e
+            concordo com as
+            <a href="#" class="accept-link">políticas de privacidade </a
+            >do Hall To Code
+          </p>
+        </div>
+         
+          <button type="submit" class="button">Cadastrar</button> 
+          <span class="sigin-form">
+            Já tem uma conta no Hall To Code?
+            <a href="./login.html" class="accept-link">Entre agora</a>
+          </span>
+        </form>
+    </section>
+</body>
